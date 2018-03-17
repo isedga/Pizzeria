@@ -1,0 +1,22 @@
+{% extends "pizzas/base.html" %}
+
+{% block content %}
+<html>
+<head>
+ <link rel="stylesheet" type="text/css">
+</head>
+<div class="container">
+<h1>Register</h1>
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" name="submit">Submit</button>
+		<input type="hidden" name="next" value="{% url 'pizzas:index' %}" />
+	</form>
+</div>
+
+</html>
+{% endblock content %}
+
+
+
