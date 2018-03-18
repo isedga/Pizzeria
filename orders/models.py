@@ -6,7 +6,7 @@ from django import forms
 # Create your models here.
 
 class Employees(models.Model):
-    ''' Our User model. '''
+    ''' Our Order model. '''
     
     PIZZA_SIZE = (
         ('30cm','30 CM'),
